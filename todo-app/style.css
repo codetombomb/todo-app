@@ -46,5 +46,59 @@ form button {
 form button:hover {
     background: rgb(181, 194, 0);
     color: white;
+}
 
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: rgb(181, 194, 0);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.complete-btn {
+    background: rgb(118, 161, 61);
+}
+
+.trash-btn {
+    border-radius: 0 0 1rem 0;
+    background: rgb(255, 102, 0);
+}
+
+.todo-item {
+    padding: 0rem .5rem;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
