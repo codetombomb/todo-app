@@ -114,8 +114,6 @@ form button:hover {
 }
 
 .select {
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
     appearance: none;
     outline: none;
     border: none;
@@ -148,4 +146,48 @@ select {
 .select:hover:after {
     background: white;
     color: rgb(118, 161, 61);
+}
+
+@media screen and (max-width: 50vh) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        display: inline-block;
+        height: 20vh;
+    }
+
+    form input,
+    form button {
+        font-size: 1.5rem;
+    }
+
+    .trash-btn,
+    .complete-btn {
+        font-size: 1.3rem;
+        height: 4rem;
+    }
+
+    .todo-item {
+        font-size: .8rem;
+        max-width: 60vw;
+    }
+
+    .select {
+        align-self: center;
+        width: 60vw;
+    }
+
+    .select:after {
+        display: none;
+    }
 }
